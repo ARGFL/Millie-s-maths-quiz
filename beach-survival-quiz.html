@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Survival Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Beach Survival Quiz Game</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="beach-survival-quiz.html">Beach Survival Quiz</a></li>
+                    <li><a href="#">Other Quiz 1</a></li>
+                    <li><a href="#">Other Quiz 2</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="home">
+                <h2>Welcome to the Game!</h2>
+                <form class="registration-form">
+                    <input type="text" class="player-name" placeholder="Enter your name" required>
+                    <button type="submit">Join Game</button>
+                </form>
+            </div>
+            <div class="quiz" style="display:none;">
+                <h2 class="question">Question will appear here</h2>
+                <div class="options">
+                    <!-- Buttons for quiz options will be inserted here by JavaScript -->
+                </div>
+                <button class="next-question" style="display:none;">Next Question</button>
+            </div>
+            <div class="challenge" style="display:none;">
+                <h2>Physical Challenge</h2>
+                <p class="challenge-description">Description will appear here</p>
+                <button class="complete-challenge">Complete Challenge</button>
+            </div>
+            <div class="resources" style="display:none;">
+                <h2>Resource Management</h2>
+                <div class="resource-status">
+                    <p>Water: <span class="resource-water">0</span></p>
+                    <p>Food: <span class="resource-food">0</span></p>
+                    <p>Building Materials: <span class="resource-materials">0</span></p>
+                </div>
+                <button class="allocate-resources">Allocate Resources</button>
+            </div>
+            <div class="leaderboard" style="display:none;">
+                <h2>Leaderboard</h2>
+                <ul class="leaderboard-list"></ul>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
